@@ -1,0 +1,175 @@
+body {   /* Reseteo de márgenes, relleno y box-sizing para el cuerpo */
+   margin: 0%;
+   box-sizing: 0;
+   padding: 0%;
+   font-family: 'Roboto', sans-serif; /* Fuente principal */
+   color: black; /* Color del texto */
+text-align: center; /* Centra el texto */
+}
+header{  /* Estilo del encabezado principal */
+   font-family: 'Times New Roman', Times, serif;
+   background-color: #3d3636; /* Color de fondo */
+   padding: 20px; /* Espaciado interno */
+   text-align: center; /* Centra el contenido */
+   color: #ddd; /* Color del texto */
+}
+   
+
+nav{ /* Estilo del menú de navegación */
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   background-color: #444; /* Color de fondo */
+    padding: 10px;  /* Espaciado interno */
+    text-align: center; /* Centra el contenido */
+    position:sticky;  /* Mantiene el menú fijo en la parte superior */
+    top:0  /* Fija la posición del menú al tope de la ventana */
+    
+ 
+
+ }
+
+ 
+ a{ /* Estilo de los enlaces */
+ color: #fff; /* Color del texto */
+text-decoration: none;  /* Quita el subrayado */
+margin: 10px 12px 7px 0px; /* Márgenes alrededor del enlace */
+
+
+
+
+ }
+section{
+    /* Estilo de la sección principal */
+   background-color: wheat; /* Color de fondo */
+   max-width: 100vw; /* Ocupa el ancho máximo disponible */
+   padding: 20px; /* Espaciado interno */
+   margin: 0 auto; /* Centra la sección */
+    
+
+}
+
+footer{
+   
+   position: fixed; /* Fija el pie de página en la parte inferior */
+   color: #fff;  /* Color del texto */
+   width: 100%; /* Ocupa todo el ancho disponible */
+   bottom: 0; /* Fija la posición al final de la ventana */
+   flex-direction: row-reverse; /* Invierte el orden de los elementos en pantallas flexibles */
+   background-color: #ddd;  /* Color de fondo */
+    
+   
+   
+}
+.logos{  /* Estilo de los iconos en el footer */
+   
+   width: 50px;  /* Ancho de las imágenes */
+   height: auto; /* Mantiene las proporciones de las imágenes */
+   margin: 0 10px;  /* Márgenes alrededor del logo */
+   flex-direction: row-reverse /* Invierte el orden en contenedores flexibles */
+
+
+   
+}
+
+
+
+h2{ /* Estilo de los subtítulos */
+   text-align: left; /* Alineación a la izquierda */
+   margin-left: 30px; /* Margen izquierdo */
+   font-family: 'Times New Roman', Times, serif; /* Fuente clásica */
+}
+
+.personajes{ /* Alineación específica para el subtítulo "Personajes principales" */
+   text-align: center;
+}
+
+h4{
+   font-family: 'Roboto', sans-serif; /* Fuente principal */
+}
+
+h3{
+   font-family: 'Times New Roman', Times, serif;
+}
+.card-img{ /* Estilo de las imágenes dentro de las tarjetas */
+   width: 150px;
+   
+}
+
+
+.card-tittle{
+   text-align: center;
+   
+
+}
+.card{ /* Estilo general de las tarjetas */
+   
+   border: 1px solid #fff; /* Borde blanco */
+   border-radius: 15px; /* Esquinas redondeadas */
+   width:80%; /* Anchura de las tarjetas */
+   padding: 15px; /* Espaciado interno */
+   background-color: #ddd;
+   margin:0 auto; /* Centra las tarjetas */
+   margin-bottom: 16px; /* Separación entre tarjetas */
+   
+   
+}
+
+
+
+
+
+
+
+
+.card-button{ /* Botón en las tarjetas */
+   color: #fcfcfd; /* Color del texto */
+   bottom: 0; /* Fija la posición al fondo */
+background-color: #3d3636; /* Color de fondo */
+
+
+}
+.card-text{ /* Estilo del texto dentro de las tarjetas */
+   color: black; 
+}
+
+.link-information{   /* Estilo de los enlaces de información */
+      padding: 2px 4px;  /* Espaciado interno */
+      background-color: #3d3636; /* Color de fondo */
+      color: white; /* Color del texto */
+      border-radius: 10px; /* Esquinas redondeadas */
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+@media (max-width: 992px){ /* Estilo para pantallas chicas (ancho maximo de 992px) */
+   .card-button{
+      width: 50%;
+   }
+   header{
+      padding: 3%; /* Agrego un espacio interno del 3% dentro del header para mantener una separación  */
+   }
+   nav{
+      padding: 2%; /* Agrego un espacio interno del 2% dentro del nav para mantener una separación  */
+   }
+}
+
+@media (min-width: 992px){ /* Estilo para pantallas grandes (ancho mínimo de 992px) */
+.card{
+   display: flex; /* Convierto el contenedor en un contenedor flexible */
+    flex-direction: row /* Ordeno los elementos hijos en una fila horizontal */
+    
+}
+.card-button{
+   margin-top: auto; /* Alinea el botón al final del contenido */
+}
+
+h3{
+margin-top: auto;
+text-align: center;
+}
+.introduction{
+   
+   width:80%; /* Ajusta el ancho de la introducción */
+   margin:0 auto; /* Centra el contenido */
+}
+
+}
